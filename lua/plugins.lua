@@ -70,6 +70,8 @@ statement.outer
             ["il"] = "@loop.inner",
             ["aa"] = "@attribute.outer",
             ["ia"] = "@attribute.inner",
+            ["aP"] = "@parameter.outer",
+            ["iP"] = "@parameter.inner",
           }
         }
       }
@@ -77,4 +79,21 @@ statement.outer
     end
   }
   use 'nvim-treesitter/nvim-treesitter-textobjects'
+
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { {'nvim-lua/plenary.nvim'} },
+    config = function()
+      local actions = require('telescope.actions')
+      require("telescope").setup{
+        defaults = {
+          mappings = {
+            i = {
+              ["<esc>"] = actions.close
+            },
+          },
+        }
+      }
+    end
+  }
 end)

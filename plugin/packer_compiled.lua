@@ -73,50 +73,9 @@ end
 
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
-_G.packer_plugins = {
-  ["nord.nvim"] = {
-    config = { 'vim.cmd("colorscheme nord")' },
-    loaded = true,
-    path = "C:\\Users\\hello\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
-  },
-  ["nvim-surround"] = {
-    config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
-    loaded = true,
-    path = "C:\\Users\\hello\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-surround",
-    url = "https://github.com/kylechui/nvim-surround"
-  },
-  ["nvim-treesitter"] = {
-    config = { "\27LJ\2\nñ\4\0\0\6\0\19\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0005\4\v\0=\4\f\3=\3\r\0025\3\16\0005\4\14\0005\5\15\0=\5\f\4=\4\17\3=\3\18\2B\0\2\1K\0\1\0\16textobjects\vselect\1\0\0\1\0\r\aaf\20@function.outer\aas\16@call.outer\ail\16@loop.inner\aic\17@class.inner\aaa\21@attribute.outer\aac\17@class.outer\aia\21@attribute.inner\aal\16@loop.outer\aif\20@function.inner\aam\19@comment.outer\aib\17@block.inner\aab\17@block.outer\ais\16@call.inner\1\0\2\14lookahead\2\venable\2\26incremental_selection\fkeymaps\1\0\4\21node_incremental\n<C-n>\22scope_incremental\n<C-s>\19init_selection\n<C-n>\21node_decremental\n<C-r>\1\0\1\venable\2\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\0\1\6\0\0\trust\blua\trust\6c\vpython\nsetup\28nvim-treesitter.configs\frequire\0" },
-    loaded = true,
-    path = "C:\\Users\\hello\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-treesitter-textobjects"] = {
-    loaded = true,
-    path = "C:\\Users\\hello\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter-textobjects",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
-  },
-  ["packer.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\hello\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
-    url = "https://github.com/wbthomason/packer.nvim"
-  }
-}
+_G.packer_plugins = {}
 
 time([[Defining packer_plugins]], false)
--- Config for: nord.nvim
-time([[Config for nord.nvim]], true)
-vim.cmd("colorscheme nord")
-time([[Config for nord.nvim]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\nñ\4\0\0\6\0\19\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0005\4\v\0=\4\f\3=\3\r\0025\3\16\0005\4\14\0005\5\15\0=\5\f\4=\4\17\3=\3\18\2B\0\2\1K\0\1\0\16textobjects\vselect\1\0\0\1\0\r\aaf\20@function.outer\aas\16@call.outer\ail\16@loop.inner\aic\17@class.inner\aaa\21@attribute.outer\aac\17@class.outer\aia\21@attribute.inner\aal\16@loop.outer\aif\20@function.inner\aam\19@comment.outer\aib\17@block.inner\aab\17@block.outer\ais\16@call.inner\1\0\2\14lookahead\2\venable\2\26incremental_selection\fkeymaps\1\0\4\21node_incremental\n<C-n>\22scope_incremental\n<C-s>\19init_selection\n<C-n>\21node_decremental\n<C-r>\1\0\1\venable\2\vindent\1\0\1\venable\2\14highlight\1\0\1\venable\2\21ensure_installed\1\0\0\1\6\0\0\trust\blua\trust\6c\vpython\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
